@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Thai Phabet</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Screen 1: Splash -->
+  <div id="screen-splash" class="splash-screen screen">
+    <div class="div">อักษรไทย</div>
+    <div class="thai-phabet">THAI PHABET</div>
+  </div>
+
+  <!-- Screen 2: Quiz -->
+  <div id="screen-quiz" class="homepage screen screen--hidden">
+    <div class="h-1">Thai consonants</div>
+    <div class="container-viewport-score">
+      <div class="container-display-scoreboard">
+        <div class="viewport-glyph" id="glyph-display"></div>
+        <div class="container-scoreboard">
+          <div class="container-infos">
+            <div class="score">Score</div>
+            <div class="_1-44-consonants" id="question-counter">1 / 44 Consonants</div>
+          </div>
+          <div class="container-points" id="scoreboard-points"></div>
+        </div>
+      </div>
+      <div class="subtitle">Answers</div>
+      <div class="container-cta-answers" id="answers-container">
+        <div class="button-choice" data-choice="0"><div class="choice"></div></div>
+        <div class="button-choice" data-choice="1"><div class="choice"></div></div>
+        <div class="button-choice" data-choice="2"><div class="choice"></div></div>
+      </div>
+    </div>
+    <div class="container-cta">
+      <div class="cta-reset" id="btn-reset"><div class="reset">Reset</div></div>
+      <div class="cta-validate" id="btn-validate"><div class="validate">Validate</div></div>
+    </div>
+  </div>
+
+  <!-- Screen 3: Result -->
+  <div id="screen-result" class="result-page screen screen--hidden">
+    <div class="header">
+      <div class="title">Result</div>
+    </div>
+    <div class="container-scoreboard-result">
+      <div class="container-scoreboard">
+        <div class="container-infos">
+          <div class="score">Score</div>
+          <div class="_1-44-consonants" id="result-counter">44 / 44 Consonants</div>
+        </div>
+        <div class="container-points" id="result-points"></div>
+      </div>
+      <div class="container-result" id="result-grid"></div>
+    </div>
+    <div class="cta-play-again" id="btn-play-again">
+      <div class="play-again">Play again</div>
+    </div>
+  </div>
+
+  <script src="./thaiscript.js"></script>
+</body>
+</html>
