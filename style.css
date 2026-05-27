@@ -336,7 +336,7 @@
 }
 .splash-screen {
   background: var(--primary-matcha-2, #f8faf6);
-  padding: 62px 0px 34px 0px;
+  padding: 0px 0px 34px 0px;
   display: flex;
   flex-direction: column;
   gap: 0px;
@@ -368,7 +368,7 @@
 }
 .homepage {
   background: var(--primary-matcha-5, #d8e5c9);
-  padding: 62px var(--padding-padding-24, 24px) 34px
+  padding: 0px var(--padding-padding-24, 24px) 34px
     var(--padding-padding-24, 24px);
   display: flex;
   flex-direction: column;
@@ -592,7 +592,7 @@
 }
 .result-page {
   background: var(--primary-matcha-5, #d8e5c9);
-  padding: 62px var(--padding-padding-24, 24px) 34px
+  padding: 0px var(--padding-padding-24, 24px) 34px
     var(--padding-padding-24, 24px);
   display: flex;
   flex-direction: column;
